@@ -1,0 +1,71 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package model;
+
+/**
+ *
+ * @author PC11
+ */
+public class ModelOperaciones {
+    private int n1;
+    private int n2;
+    private int rn;
+    private String operador;
+    
+    
+    public int getN1(){
+        return n1;
+        
+    }
+    public void setN1( int n1){
+        this.n1 = n1;
+    }
+    
+     public int getN2(){
+        return n2;
+        
+    }
+    public void setN2( int n2){
+        this.n2 = n2;
+    }
+     public int getRN(){
+        return rn;
+        
+    }
+    public void setRN( int rn){
+        this.rn = rn;
+        
+    }
+    public String getOperador(){
+        return operador ;
+        
+    }
+    public void setOperador( String operador){
+        this.operador = operador;
+        
+    }
+    
+    
+    
+    public int operacion(){
+       if (operador.equals("+")){
+           return rn = n1 + n2;
+       }
+       if (operador.equals("-")){
+           return rn = n1 - n2;
+       }
+       if (operador.equals("*")){
+           return rn = n1 * n2;
+       }
+       if (operador.equals("/")){
+           return rn = n1 / n2;
+       }
+        return 0;
+    
+   
+                                               
+    }
+}
